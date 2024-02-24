@@ -1,6 +1,8 @@
 import { Jost } from "next/font/google";
 import "./globals.css";
 import Header from "./_component/Header";
+import Footer from "./_component/Footer";
+
 
 const inter = Jost({ subsets: ["latin"] });
 
@@ -17,6 +19,7 @@ export default function RootLayout({ children }) {
           <Header />
         {children}
         </div>
+        <Footer />
         </body>
     </html>
   );
