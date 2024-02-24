@@ -34,13 +34,13 @@ const Header = () => {
   return (
     <div className='container md:w-3xl mt-5 flex justify-between items-center bg-slate-200 h-20 p-5 rounded-md shadow-md'>
         <div className='flex gap-10 items-center'>
-        <Image src='/logo.svg' alt='logo' width={180} height={80} />
+        <Image src='/logo.png' alt='logo' width={180} height={80} />
         <ul className='gap-10 justify-center hidden sm:flex'>
         {
             Menu.map((item)=>{
                 return (
                     <Link href={item.path} key={item.id}>
-                    <li className='hover:text-primary cursor-pointer hover:scale-105 transition-all ease-in-out duration-300'>
+                    <li className='hover:text-secondary cursor-pointer hover:scale-105 transition-all ease-in-out duration-300'>
                     {item.name}
                     </li>
                     </Link>
@@ -49,7 +49,7 @@ const Header = () => {
         }
         </ul>
         </div>
-        <Button>Get Started</Button>
+        <Button className='hover:bg-secondary'>Get Started</Button>
     </div>
   )
 }

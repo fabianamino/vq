@@ -1,6 +1,6 @@
 import React from 'react'
 
-const hero = () => {
+const Hero = () => {
   return (
     <div>
         <section className="dark:bg-gray-800 dark:text-gray-100">
@@ -26,4 +26,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default Hero;
