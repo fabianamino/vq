@@ -42,8 +42,8 @@ const CategorySearch = () => {
             <label className='text-secondary hover:text-primary text-xs'>{item?.attributes?.Name}</label>
             <Image src={item?.attributes?.Icon?.data.attributes?.url}
             alt={item?.attributes?.Name}
-            width={130}
-            height={130}
+            width={150}
+            height={150}
             onError={(e)=>{e.target.src='https://res.cloudinary.com/dgxdplwsc/image/upload/v1708720162/vixen_704bd6d01c.png'; }}            
             />
           </Link>
