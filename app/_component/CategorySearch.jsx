@@ -40,7 +40,7 @@ const CategorySearch = () => {
           p-5 bg-blue-50 m-2 rounded-lg cursor-pointer
           gap-2 hover:scale-110 transition-all ease-in-out'>
             <label className='text-secondary hover:text-primary text-xs'>{item?.attributes?.Name}</label>
-            <Image src={item?.attributes?.Icon?.data.attributes?.url}
+            <Image src={item?.attributes?.Image?.data.attributes?.url}
             alt={item?.attributes?.Name}
             width={150}
             height={150}

@@ -10,7 +10,7 @@ const axiosClient = axios.create({
 
 })
 
-const getCategory=()=>axiosClient.get('/categories?populate=*');
+const getCategory=()=>axiosClient.get('/sliders?populate=*');
 
 const getModel=()=>axiosClient.get('/models?populate=*');
 

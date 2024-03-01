@@ -21,7 +21,7 @@ const ModelList = ({modelList }) => {
                     />
                     <div className='mt-3 items-baseline flex flex-col gap-1'>
                         <h2 className='text-[10px] bg-blue-100 p-1 rounded-full
-                        px-2 text-primary'>{model?.attributes?.Categories.data?.attributes?.Name}</h2>
+                        px-2 text-primary'>{model?.attributes?.categories?.data?.attributes?.Name}</h2>
                         <h2 className='font-bold'>{model?.attributes?.Name}</h2>
                         <h2 className='text-primary text-sm'>{model?.attributes?.Age}</h2>
                         <h2 className='text-gray-500 text-sm'>{model.attributes?.Location}</h2>
