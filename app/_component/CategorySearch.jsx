@@ -39,7 +39,7 @@ const CategorySearch = () => {
           flex-col text-center items-center
           p-5 bg-blue-50 m-2 rounded-lg cursor-pointer
           gap-2 hover:scale-110 transition-all ease-in-out'>
-            <label className='text-secondary hover:text-primary text-xs'>{item?.attributes?.Name}</label>
+            <label className='text-primary hover:text-green-500 text-sm'>{item?.attributes?.Name}</label>
             <Image src={item?.attributes?.Image?.data.attributes?.url}
             alt={item?.attributes?.Name}
             width={150}
