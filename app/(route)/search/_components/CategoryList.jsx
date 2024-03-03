@@ -48,12 +48,8 @@ const CategoryList = ({category}) => {
           {categoryList.length>0?categoryList.map((item,index)=>index<12&&(
             <CommandItem key={index}>
               <div className='hover:bg-sky-50 hover:border-green-700 w-full rounded-md'>
-                <Link href={'/search/'+item.attributes.Name} className='flex gap-2 text-center items-center rounded-md cursor-pointer'>
-                  <Image src={item?.attributes?.Image?.data.attributes?.url}
-                  alt={item?.attributes?.Name}
-                  width={40}
-                  height={30}
-                  />
+              <Link href={'/search/' + item.attributes.Name.replace(/ /g, '_')} className='flex gap-2 text-center items-center rounded-md cursor-pointer'>
+  <Image src={item?.attributes?.Image?.data.attributes?.url} alt={item?.attributes?.Name} width={40} height={30} />
               <label className='ml-5'>{item?.attributes?.Name}</label>
               </Link>
               </div>
