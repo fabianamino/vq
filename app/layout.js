@@ -19,7 +19,9 @@ export default function RootLayout({ children }) {
           <Header />
         {children}
         </div>
+        <div className="border border-primary rounded-2xl container my-5">
         <Footer />
+        </div>
         </body>
     </html>
   );

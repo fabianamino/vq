@@ -41,6 +41,8 @@ export default function Home() {
       {error && <p>{error}</p>}
       {/* Render ModelList component if data is available */}
       {modelList.length > 0 && <ModelList modelList={modelList} />}
+      <hr className="text-primary"></hr>
                     </div>
+                    
 );
 }

@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/ui/command.jsx", "components/ui/button.jsx"  ],
   "exclude": [
     "node_modules"
   ]
