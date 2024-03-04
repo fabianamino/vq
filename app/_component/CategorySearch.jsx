@@ -35,7 +35,7 @@ const CategorySearch = () => {
     {/* Display category list here */}
     <div className='grid grid-cols-3 mt-5 md:grid-cols-4 lg:grid-cols-4 gap-4 '>
         {categoryList.length>0?categoryList.map((item,index)=>index<12&&(
-          <Link href={'/search/'+item.attributes.Name} key={index} className='flex 
+          <Link href={'/search/'+item.attributes.Name.replace(/ /g, '_')} key={index} className='flex 
           flex-col text-center items-center
           p-5 bg-blue-50 m-2 rounded-lg cursor-pointer
           gap-2 hover:scale-110 transition-all ease-in-out'>
