@@ -5,7 +5,7 @@ const SearchLayout = ({children}) => {
   return (
     <div>
 <div class="container grid grid-cols-1 gap-4 lg:grid-cols-5 lg:gap-8 my-10">
-  <div class="h-fit rounded-lg border border-primary shadow-sm">
+  <div class="h-fit hidden md:block rounded-lg border border-primary shadow-sm">
         <CategoryList/>
   </div>
   <div class="h-screen rounded-lg bg-gray-200 lg:col-span-4 border border-primary">
