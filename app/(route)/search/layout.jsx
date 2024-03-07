@@ -8,7 +8,7 @@ const SearchLayout = ({children}) => {
   <div class="h-fit hidden md:block rounded-lg border border-primary shadow-sm">
         <CategoryList/>
   </div>
-  <div class="h-screen rounded-lg bg-gray-200 lg:col-span-4 border border-primary">
+  <div class="h-fit rounded-lg bg-gray-200 lg:col-span-4 border border-primary">
   {children}
   </div>
 </div>

@@ -2,10 +2,10 @@ import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 
-const ModelList = ({modelList }) => {
+const ModelList = ({modelList, heading='The 10 Most Popular' }) => {
   return (
     <div className='container my-5 font-semibold'>
-        <h2 className='mb-5 text-center text-3xl text-primary'>The 10 Most Popular</h2>
+        <h2 className='mb-5 text-center text-3xl text-primary'>{heading}</h2>
         <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
         {modelList.length>0?modelList.map((model,index)=>(
                 <div className='border-[1px] rounded-lg p-3

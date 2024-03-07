@@ -13,8 +13,11 @@ const axiosClient = axios.create({
 const getCategory=()=>axiosClient.get('/sliders?populate=*');
 
 const getModel=()=>axiosClient.get('/models?populate=*');
+const getModelByCategory=(category)=>axiosClient.get('/models?filters[categories][Name][$in]='+category+"&populate=*")
 
 export default {
     getCategory,
-    getModel
+    getModel,
+    getModelByCategory
 };
+

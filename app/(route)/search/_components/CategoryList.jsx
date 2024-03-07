@@ -50,7 +50,7 @@ const CategoryList = () => {
         <CommandGroup heading="Suggestions" className=' text-primary overflow-visible mx-2 justify-center'>
           {categoryList.length>0?categoryList.map((item,index)=>index<12&&(
             <CommandItem key={index}>
-              <div className={`hover:bg-sky-50 hover:border-green-700 w-full rounded-md ${category==item.attributes.Name.replace(/ /g, '_')&&'bg-lime-200' }`}>
+              <div className={`hover:bg-sky-50 hover:border-green-700 w-full rounded-md ${category==item.attributes.Name.replace(/ /g, '_')&&'bg-lime-200 items-center ring-2 ring-lime-500' }`}>
               <Link href={'/search/' + item.attributes.Name.replace(/ /g, '_')} className='flex text-center items-center rounded-md cursor-pointer'>
   <Image src={item?.attributes?.Image?.data.attributes?.url} alt={item?.attributes?.Name} width={40} height={30} />
               <label className='ml-5'>{item?.attributes?.Name}</label>
