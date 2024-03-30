@@ -14,10 +14,12 @@ const getCategory=()=>axiosClient.get('/sliders?populate=*');
 
 const getModel=()=>axiosClient.get('/models?populate=*');
 const getModelByCategory=(category)=>axiosClient.get('/models?filters[categories][Name][$in]='+category+"&populate=*")
+const getModelById=(id)=>axiosClient.get('/models/'+id+'?populate=*');
 
 export default {
     getCategory,
     getModel,
-    getModelByCategory
+    getModelByCategory,
+    getModelById,
 };
 

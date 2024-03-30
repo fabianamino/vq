@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/ui/command.tsx", "components/ui/button.tsx", "components/ui/dialog.jsx"  ],
+, "components/ui/command.tsx", "components/ui/button.tsx", "components/ui/dialog.jsx", "app/_component/Header.jsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -4,6 +4,7 @@ import Header from "./_component/Header";
 import Footer from "./_component/Footer";
 
 
+
 const inter = Jost({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="md:px-20">
           <Header />
-        {children}
+       <div suppressHydrationWarning>{children} </div>
         </div>
         <div className="border border-primary rounded-2xl container my-5">
         <Footer />
